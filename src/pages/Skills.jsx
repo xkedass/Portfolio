@@ -2,8 +2,13 @@ import React from 'react'
 
 export default function Skills() {
   return (
-    <div>
-        <h1> 😎 </h1>
-    </div>
+    <>
+        {/* Page skills */}
+      <div className="skills container-fluid" id="skills">
+        <div className="skills-content">
+          <h1>skills</h1>
+        </div>
+      </div>
+    </>
   )
 }

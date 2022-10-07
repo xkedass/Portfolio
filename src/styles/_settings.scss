@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+
+// variables et mixins
+$font-1: "Syncopate", sans-serif;
+
+$color-1: #000000;
+$color-2: #ffffff;
+$color-3: rgb(43, 145, 148);
+$color-4: #293241;
+$color-5: #ee6c4d;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 100vh;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// Général
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-1;
+  background-color: $color-1;
+  color: $color-2;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: $color-2;
+  &:hover {
+    background-color: $color-2;
+    color: $color-1;
+    margin: 2px;
+  }
+  a:visited {
+    color: $black;
+  }
+}
+.skills-content,
+.projects-content,
+.contact-content {
+  height: $minHeight;
+  @include verticalCenter();
+}

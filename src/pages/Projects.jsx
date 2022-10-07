@@ -3,6 +3,12 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <div> <h1> coucou c'est les projets bisous 😘 </h1></div>
+    <>
+      <div className="projects container-fluid" id="projects">
+        <div className="projects-content">
+          <h1>projects</h1>
+        </div>
+      </div>
+    </>
   )
 }

@@ -1,0 +1,51 @@
+.home {
+  .accueil {
+    height: 100vh;
+
+    .titles {
+      border: double 2px $color-2;
+      border-radius: 1%;
+    }
+  }
+
+  i {
+    color: $color-2;
+    margin: 0px 40px 0px 40px;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  h3 {
+    font-size: 20px;
+    background-color: $color-2;
+    border-radius: 10px;
+    padding: 5px;
+    color: $color-1;
+  }
+
+  .home-content {
+    h4 {
+      color: $color-2;
+    }
+  }
+
+  .socials {
+    a,
+    h4,
+    i {
+      display: flex;
+      flex-direction: row;
+      font-size: 10px;
+      margin: 5px;
+    }
+  }
+}

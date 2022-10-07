@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function Contact() {
   return (
-    <div><h1> 🤗 </h1></div>
-  )
+    <div>
+      <div className="contact container-fluid" id="contact">
+        <div className="contact-content">
+          <h1>contact</h1>
+        </div>
+      </div>
+    </div>
+  );
 }
