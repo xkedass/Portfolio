@@ -32,15 +32,8 @@
     color: $color-1;
   }
 
-  .home-content {
-    h4 {
-      color: $color-2;
-    }
-  }
-
   .socials {
     a,
-    h4,
     i {
       display: flex;
       flex-direction: row;

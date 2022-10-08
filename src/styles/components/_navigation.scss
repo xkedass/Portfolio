@@ -1,6 +1,14 @@
 .navigation{
-    height: 100vh;
-
+    a{
+        color: $color-1;
+        &:hover {
+            background-color: $color-2;
+            color: $color-5;
+          }
+    }
+    .linkCv{
+        color: $color-2;
+    }
     .side-left {
         height: 100vh;
     }
