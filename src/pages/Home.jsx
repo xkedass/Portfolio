@@ -64,8 +64,8 @@ const Home = () => {
         </div>
       </div>
       <Navigations/>
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   );

@@ -1,0 +1,41 @@
+.projects {
+
+ @include verticalCenter;
+ flex-direction: column;
+
+    .project {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        
+        h3{
+            position: absolute;
+            top : 45%;
+            left: 3%;
+            z-index: 1;
+            background-color: transparent;
+            color: $white;
+          
+
+            
+        }
+
+        .visible{
+            color: red;
+            
+        }
+
+        
+
+        img{
+          height: 25vh;
+          width: 100%;
+          object-fit: cover;
+          position: relative;
+          opacity: 0.7;
+        }
+
+
+    }
+}
