@@ -1,41 +1,126 @@
 .projects {
 
- @include verticalCenter;
- flex-direction: column;
+    @include verticalCenter;
+    flex-direction: column;
 
     .project {
         padding: 0;
         margin: 0 auto;
         width: 100%;
         position: relative;
-        
-        h3{
+
+        h3 {
             position: absolute;
-            top : 45%;
+            top: 45%;
             left: 3%;
             z-index: 1;
             background-color: transparent;
             color: $white;
-          
-
-            
+            visibility: visible;
+            font-size: 25px;
+            text-transform: uppercase;
         }
 
-        .visible{
-            color: red;
-            
+        img {
+            height: 25vh;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            opacity: 0.7;
         }
 
-        
 
-        img{
-          height: 25vh;
-          width: 100%;
-          object-fit: cover;
-          position: relative;
-          opacity: 0.7;
+        .banner:hover {
+            .hide-title {
+                visibility: hidden;
+            }
         }
 
+        .slide-top {
+            animation: slide-top .5s cubic-bezier(.25, .46, .45, .94) both
+        }
+
+        ;
+
+        @keyframes slide-top {
+            0% {
+                transform: translateY(0)
+            }
+
+            100% {
+                transform: translateY(-15px)
+            }
+        }
 
     }
+
+    .header-project {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .showInfos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.507);
+        animation: popup .3s ease forwards ;
+        transform-origin: center;
+        z-index: 23;
+       
+    }
+
+    .infosContent{
+        width: 600px;
+        position: relative;
+        top : 25%;
+        margin: 0 auto;
+        color: $color-5;
+        background: $color-1;
+        border-radius: $borderRadius;
+        padding: 2rem;
+        box-shadow: 0 10px 10px #333;
+        animation: popup .6s ease forwards;
+        transform: scale(0);
+        transform-origin: center;
+    }
+  
+    @keyframes popup {
+        to {
+          transform: scale(1);
+        } 
+      }
+      
+      .head {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+      }
+      h2 {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+      .button {
+        cursor: pointer;
+        color: $color-1;
+        background: $color-5;
+        border-radius: $borderRadius;
+        padding: 1rem;
+        transition: .2s;
+
+        &:hover {
+          background: $color-4;
+        }
+      }
+      .text {
+        text-align: justify;
+        padding-bottom: 1rem;
+      }
+      .return {
+        margin: 1rem auto;
+        width: 200px;
+      }
 }

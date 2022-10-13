@@ -1,67 +1,36 @@
-import React, { Component} from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default class Project extends Component {
-    state ={
-        showInfo: false,
-        message : 'name',
-    }
-    handleInfo = () => {
-      this.setState({
-        showInfo:!this.state.showInfo
-      })
-    }
-    handleMessage = () => {
-      this.setState({
-        message:this.state.message
-      })
-    }
+const Project = ({ item }) => {
+  const [isHovering, setIsHovering] = useState(false);
+  
 
-  render() {
-    let {name, languagesIcons, source, info, picture, status} =this.props.item;
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
 
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
 
-
-    return (
-      <div className="project container-fluid">
-        <NavLink activeclassname = 'visible' className="banner"> 
-          <div>
-            {this.state.message && <h3 className='message'> {this.state.message}</h3>}
-          </div>
-          <p> cliquez pour découvrir </p>
-          <img
-            src={picture}
-            alt="presentation du projet"
-            onClick={this.handleInfo}
-          />
-        </NavLink>
-        
-
-        {this.state.showInfo && (
-          <div className="showInfos">
-            <div className="infosContent">
-              <div className="head">
-                <h2>{name}</h2>
-                <div className="sourceCode">
-                  <a
-                    href={source}
-                    rel="noopener noreferrer"
-                    className="button"
-                    target="blank"
-                  >
-                    Source
-                  </a>
-                </div>
-              </div>
-
-              <p className="text">{info}</p>
-              <div className="button return" onClick={this.handleInfo}>
-                Retourner sur la page
-              </div>
-            </div>
-          </div>
-        )}
+  return (
+    <div className="project container-fluid gx-0">
+      <div
+        className="banner"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
+        <h3 className="hide-title slide-top">{item.name}</h3>
+        <div> 
+          {isHovering && <Link to={`/project-page/${item.id}`} ><h3 className="slide-top"> Découvrir </h3> </Link>  } 
+        </div>
+        <img src={item.picture} alt="presentation du projet" />
       </div>
-    );
-  }
-}
+      
+      
+
+      </div>
+  );
+};
+
+export default Project;
