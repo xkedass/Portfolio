@@ -12,9 +12,6 @@ export default function Projects() {
         </div>
           <ProjectList/>
         </div>
-        <div className="footer-project">
-          <h2> Les autres projets </h2>
-        </div>
       </div>
     </>
   )
