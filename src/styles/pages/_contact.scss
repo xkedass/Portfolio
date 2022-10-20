@@ -1,0 +1,9 @@
+.c-yup {
+    color: red;
+    text-align: center;
+}
+
+.c-yup:before{
+    display: inline;
+    content: "❌" ;
+}
