@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const schema = yup.object({
@@ -18,8 +19,20 @@ export default function Contact() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = () => {
+  const onSubmit = (data, r) => {
     alert("votre message a bien été envoyé");
+    const templateId = "template_mv8070v";
+    const serviceId = "service_pqjkban";
+    sendFeedback(serviceId, templateId, {
+      name: data.name, 
+      firstName: data.firstName,
+      mess: data.mess,
+      reply_to: r.target.reset(),
+    })
+  };
+  const sendFeedback = (serviceId, templateId, variables) => {
+    emailjs
+    .send(serviceId, templateId, variables, 'oVZRz5qfAOnUdwk5q')
   };
 
   return (
