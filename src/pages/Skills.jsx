@@ -34,15 +34,27 @@ export default function Skills() {
           </div>
 
           <div className="col-6 side-right d-flex justify-content-center align-items-center flex-column">
-            <div className="content-tabs">
+            <div className="content-tabs d-flex flex-wrap">
               <div
                 className={
                   toggleState === 1 ? "content  active-content" : "content"
                 }
               >
-                <div> {skillsFront.map((logo) => (
-                  <i className={logo} key={logo}></i>
-                ))}</div>
+                {skillsFront.map((logo) => (
+                  <div class="card card-flip">
+                    <div class="card-front rounded-circle text-white ">
+                      <div class="card-body">
+                        <p>{logo.nom}</p>
+                      </div>
+                    </div>
+                    <div class="card-back rounded-circle">
+                      <div class="card-body d-flex justify-content-center align-items-center">
+                        {logo.id === 4 ? i.classList.add('bootstrap') : ''}
+                        <i className={logo.icons} key={logo.id}></i>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
 
               <div
@@ -50,9 +62,9 @@ export default function Skills() {
                   toggleState === 2 ? "content  active-content" : "content"
                 }
               >
-                {skillsBack.map((logo) => (
+                {/* {skillsBack.map((logo) => (
                   <i className={logo} key={logo}></i>
-                ))}
+                ))} */}
               </div>
 
               <div
@@ -60,9 +72,9 @@ export default function Skills() {
                   toggleState === 3 ? "content  active-content" : "content"
                 }
               >
-                {skillsTools.map((logo) => (
+                {/* {skillsTools.map((logo) => (
                   <i className={logo} key={logo}></i>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
