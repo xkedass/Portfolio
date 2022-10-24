@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 import Contact from "./Contact";
 import Navigations from "./Navigations";
 import Projects from "./Projects";
@@ -66,6 +67,7 @@ const Home = () => {
       <Navigations/>
       <Projects />
       <Skills />
+      <About />
       <Contact />
     </div>
   );

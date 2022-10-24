@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation';
 export default function Navigations() {
   return (
     <>
-    <div className="navigation container-fluid" id="navigation">
+    <div className="navigation container-fluid " id="navigation">
         <div className="navigation-content row">
           <div className="col-6 side-left ">
             <div className="logo d-flex justify-content-center align-items-center flex-column">

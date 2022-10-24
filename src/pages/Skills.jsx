@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { skillsBack, skillsFront, skillsTools } from "../data/skills";
+import { skillsBack, skillsFront, skillsTool } from "../data/skills";
 
 export default function Skills() {
   const [toggleState, setToggleState] = useState(1);
@@ -49,7 +49,6 @@ export default function Skills() {
                     </div>
                     <div class="card-back rounded-circle">
                       <div class="card-body d-flex justify-content-center align-items-center">
-                        {logo.id === 4 ? i.classList.add('bootstrap') : ''}
                         <i className={logo.icons} key={logo.id}></i>
                       </div>
                     </div>
@@ -62,9 +61,20 @@ export default function Skills() {
                   toggleState === 2 ? "content  active-content" : "content"
                 }
               >
-                {/* {skillsBack.map((logo) => (
-                  <i className={logo} key={logo}></i>
-                ))} */}
+                {skillsBack.map((logo) => (
+                  <div class="card card-flip">
+                    <div class="card-front rounded-circle text-white ">
+                      <div class="card-body">
+                        <p>{logo.nom}</p>
+                      </div>
+                    </div>
+                    <div class="card-back rounded-circle">
+                      <div class="card-body d-flex justify-content-center align-items-center">
+                        <i className={logo.icons} key={logo.id}></i>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
 
               <div
@@ -72,9 +82,20 @@ export default function Skills() {
                   toggleState === 3 ? "content  active-content" : "content"
                 }
               >
-                {/* {skillsTools.map((logo) => (
-                  <i className={logo} key={logo}></i>
-                ))} */}
+                {skillsTool.map((logo) => (
+                  <div class="card card-flip">
+                    <div class="card-front rounded-circle text-white ">
+                      <div class="card-body">
+                        <p>{logo.nom}</p>
+                      </div>
+                    </div>
+                    <div class="card-back rounded-circle">
+                      <div class="card-body d-flex justify-content-center align-items-center">
+                        <i className={logo.icons} key={logo.id}></i>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

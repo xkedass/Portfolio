@@ -1,0 +1,24 @@
+.about-content {
+    .side-left {
+        height: 100vh; 
+    }
+
+    img{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+ 
+    title {
+        color : $white;
+    }
+    article {
+        margin: 10%;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+}
