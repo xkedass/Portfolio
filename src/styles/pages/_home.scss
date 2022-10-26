@@ -3,8 +3,33 @@
     height: 100vh;
 
     .titles {
-      border: double 2px $color-2;
+      border: double 1.8px $color-2;
       border-radius: 1%;
+      animation-duration: 3s;
+      animation-name: slidein;
+      width: 50%;
+
+
+
+    }
+
+    @keyframes slidein {
+      from {
+        margin-bottom: 100%;
+      }
+
+      to {
+        margin-bottom: 0%;
+      }
+    }
+
+    .titles:hover {
+      background-color: #a166ed;
+      transition: 1s ease-in-out;
+    }
+
+    .gif {
+      width: 10%;
     }
   }
 
@@ -14,7 +39,7 @@
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 45px;
     margin: 0;
     padding: 0;
   }
@@ -25,7 +50,7 @@
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 15px;
     background-color: $color-2;
     border-radius: 10px;
     padding: 5px;
@@ -33,12 +58,40 @@
   }
 
   .socials {
+
+    ul {
+      margin-bottom: 5px;
+    }
+
     a,
     i {
-      display: flex;
       flex-direction: row;
       font-size: 10px;
-      margin: 5px;
+      color: white;
+      text-transform: uppercase;
+
     }
+  }
+
+  a:hover {
+    background-color: transparent !important;
+    color: rgb(159, 68, 234);
+
+  }
+
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 555;
+    background-color: $black;
+
+    i {
+      color : #a166ed;
+    }
+
+
   }
 }

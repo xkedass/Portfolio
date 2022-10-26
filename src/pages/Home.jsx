@@ -12,17 +12,32 @@ const Home = () => {
 
         {/* Page acceuil */}
         <div
-          className="accueil  d-flex justify-content-center align-items-center flex-column"
+          className="accueil d-flex justify-content-center align-items-center flex-column"
           id="acceuil"
         >
-          <div className="titles p-4 mt-5">
-            <h1 className="text-center main-title">WELCOME</h1>
+          <div className="titles p-4">
+            <h1 className="text-center main-title">WELCOME</h1> 
+           
             <h2 className="text-center">
-              MY NAME IS <i className="fa-solid fa-star"></i> FATYA{" "}
+              MY NAME IS <img className='gif' src="./medias/gif.gif" alt="" /> FATYA{" "}
             </h2>
-            <h3 className="text-center"> AND I'M DEVELOPPER WEB </h3>
+           
+            <h3 className="text-center"> AND I AM DEVELOPPER WEB </h3>
           </div>
-          <div className="socials align-self-end ">
+           
+          <div className="scroll d-flex justify-content-center align-items-center flex-column mt-5">
+            <p> SCROLL </p>
+            <i className="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <Navigations/>
+      <Projects />
+      <Skills />
+      <About />
+      <Contact />
+      <footer className="d-flex justify-content-around align-items-center">
+        <div className="socials">
             <ul>
               <a
                 href="https://github.com/xkedass"
@@ -58,17 +73,7 @@ const Home = () => {
               </a>
             </ul>
           </div>
-          <div className="scroll d-flex justify-content-center align-items-center flex-column">
-            <p> SCROLL </p>
-            <i className="fa-solid fa-caret-down"></i>
-          </div>
-        </div>
-      </div>
-      <Navigations/>
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
+      </footer>
     </div>
   );
 };

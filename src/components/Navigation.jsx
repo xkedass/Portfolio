@@ -1,13 +1,30 @@
-import React from 'react';
+import React from "react";
 
 export default function Navigation() {
   return (
-    <div className='nav'>
-        <ul>
-            <a href="#projects"><li><span> PROJECTS</span></li></a>
-            <a href="#skills"><li><span> SKILLS</span></li></a>
-            <a href="#contact"><li><span> CONTACT</span></li></a>
-        </ul>
+    <div className="nav">
+      <ul>
+        <a href="#projects">
+          <li>
+            <span> PROJECTS</span>
+          </li>
+        </a>
+        <a href="#skills">
+          <li>
+            <span> SKILLS</span>
+          </li>
+        </a>
+        <a href="#about">
+          <li>
+            <span> ABOUT ME</span>
+          </li>
+        </a>
+        <a href="#contact">
+          <li>
+            <span> CONTACT</span>
+          </li>
+        </a>
+      </ul>
     </div>
-  )
+  );
 }

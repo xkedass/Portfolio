@@ -10,7 +10,7 @@ export default function Skills() {
 
   return (
     <>
-      <div className="container skills" id="skills">
+      <div className="container-fluid skills" id="skills">
         <div className="skills-content">
           <div className="col-6 side-left d-flex justify-content-center align-items-center flex-column">
             <button
@@ -41,15 +41,15 @@ export default function Skills() {
                 }
               >
                 {skillsFront.map((logo) => (
-                  <div class="card card-flip">
-                    <div class="card-front rounded-circle text-white ">
-                      <div class="card-body">
+                  <div className="card card-flip" key={logo.id}>
+                    <div className="card-front rounded-circle text-white ">
+                      <div className="card-body">
                         <p>{logo.nom}</p>
                       </div>
                     </div>
-                    <div class="card-back rounded-circle">
-                      <div class="card-body d-flex justify-content-center align-items-center">
-                        <i className={logo.icons} key={logo.id}></i>
+                    <div className="card-back rounded-circle">
+                      <div className="card-body d-flex justify-content-center align-items-center">
+                        <i className={logo.icons} ></i>
                       </div>
                     </div>
                   </div>
@@ -62,15 +62,15 @@ export default function Skills() {
                 }
               >
                 {skillsBack.map((logo) => (
-                  <div class="card card-flip">
-                    <div class="card-front rounded-circle text-white ">
-                      <div class="card-body">
+                  <div className="card card-flip" key={logo.id}>
+                    <div className="card-front rounded-circle text-white ">
+                      <div className="card-body">
                         <p>{logo.nom}</p>
                       </div>
                     </div>
-                    <div class="card-back rounded-circle">
-                      <div class="card-body d-flex justify-content-center align-items-center">
-                        <i className={logo.icons} key={logo.id}></i>
+                    <div className="card-back rounded-circle">
+                      <div className="card-body d-flex justify-content-center align-items-center">
+                        <i className={logo.icons} ></i>
                       </div>
                     </div>
                   </div>
@@ -83,15 +83,15 @@ export default function Skills() {
                 }
               >
                 {skillsTool.map((logo) => (
-                  <div class="card card-flip">
-                    <div class="card-front rounded-circle text-white ">
-                      <div class="card-body">
+                  <div className="card card-flip" key={logo.id}>
+                    <div className="card-front rounded-circle text-white ">
+                      <div className="card-body">
                         <p>{logo.nom}</p>
                       </div>
                     </div>
-                    <div class="card-back rounded-circle">
-                      <div class="card-body d-flex justify-content-center align-items-center">
-                        <i className={logo.icons} key={logo.id}></i>
+                    <div className="card-back rounded-circle">
+                      <div className="card-body d-flex justify-content-center align-items-center">
+                        <i className={logo.icons}></i>
                       </div>
                     </div>
                   </div>

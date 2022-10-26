@@ -1,14 +1,4 @@
 .navigation{
-    a{
-        color: $color-1;
-        &:hover {
-            background-color: $color-2;
-            color: $color-5;
-          }
-    }
-    .linkCv{
-        color: $color-2;
-    }
     .side-left {
         height: 100vh;
     }
@@ -19,4 +9,14 @@
     span{
         font-size : 40px;
     }
+
+   a{
+    color: rgb(205, 203, 200);
+   }
 }
+
+
+
+  
+    
+      
