@@ -1,17 +1,25 @@
 .about-content {
     .side-left {
-        height: 100vh; 
+        height: 100vh;
     }
 
-    img{
+    img {
         height: 100vh;
-        width: 100%;
+        width: 150%;
         object-fit: contain;
+        transition: 1s ease-in-out;
+
     }
- 
+
+    img:hover {
+        transform: scale(1.3);
+        
+    }
+
     title {
-        color : $white;
+        color: $white;
     }
+
     article {
         margin: 10%;
         font-size: 10px;

@@ -5,6 +5,7 @@ import Navigations from "./Navigations";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
+
 const Home = () => {
   return (
     <div className="home container-fluid g-0">
@@ -73,7 +74,9 @@ const Home = () => {
               </a>
             </ul>
           </div>
-      </footer>
+         
+      </footer> 
+      
     </div>
   );
 };

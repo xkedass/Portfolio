@@ -7,7 +7,7 @@ export default function About() {
         <div className="about-content row g-0">
           <div className="col-6 side-left ">
             <div className=" d-flex justify-content-center align-items-center flex-column bg-white">
-              <img src="./medias/LOGO WHITE (2).png" alt="logo black" width={350} />
+              <img src="./medias/objet moving.gif" alt="logo black" />
               {/* <a
                 className="text-center linkCv"
                 href="./medias/CV Fatiha SADEQ - Développeuse Web (1).pdf"
