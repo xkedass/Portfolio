@@ -20,7 +20,7 @@ const Home = () => {
             <h1 className="text-center main-title">WELCOME</h1> 
            
             <h2 className="text-center">
-              MY NAME IS <img className='gif' src="./medias/gif.gif" alt="" /> FATYA{" "}
+              MY NAME IS <img className='gif' src="./medias/stars.gif" alt="" /> FATYA{" "}
             </h2>
            
             <h3 className="text-center"> AND I AM DEVELOPPER WEB </h3>

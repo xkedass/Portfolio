@@ -10,7 +10,7 @@ export default function Skills() {
 
   return (
     <>
-      <div className="container-fluid skills" id="skills">
+      <div className="container-fluid skills g-0" id="skills">
         <div className="skills-content">
           <div className="col-6 side-left d-flex justify-content-center align-items-center flex-column">
             <button

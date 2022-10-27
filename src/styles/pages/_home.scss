@@ -24,12 +24,13 @@
     }
 
     .titles:hover {
-      background-color: #a166ed;
+      background-color: #a693f5;
       transition: 1s ease-in-out;
     }
 
     .gif {
-      width: 10%;
+      width: 20%;
+      object-fit: cover;
     }
   }
 
