@@ -19,7 +19,7 @@ export default function About() {
           </div>
           <div className="col-6 side-right d-flex justify-content-center align-items-center flex-column">
            <h4> ABOUT ME </h4>
-           <article className='text-justify'> Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</article>
+           <article className='text-justify'>  Having a great affinity with the web world, I naturally turned to web development. Expressing my creativity through technology and being able to help my fellow man in an unknown field are the reasons why I chose to become a web developer.</article>
           </div>
         </div>
       </div>

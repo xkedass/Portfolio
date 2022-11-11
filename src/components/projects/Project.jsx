@@ -22,7 +22,7 @@ const Project = ({ item }) => {
       >
         <h3 className="hide-title slide-top">{item.name}</h3>
         <div> 
-          {isHovering && <Link to={`/project-page/${item.id}`} ><h3 className="slide-top"> Découvrir </h3> </Link>  } 
+          {isHovering && <Link to={`/project-page/${item.id}`} ><h3 className="slide-top"> SEE MORE </h3> </Link>  } 
         </div>
         <img src={item.picture} alt="presentation du projet" />
       </div>

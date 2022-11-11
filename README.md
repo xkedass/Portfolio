@@ -46,7 +46,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
-
+"
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
@@ -77,3 +77,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Si possible utilisez la librairie GSAP
 - Rajouter des projets 
 - Ajouter les différents liens pour chaque projet
+
+##### Ce qu'il reste à faire 
+- npm i -sass
+- npm react router 
+- react router dom 
+- npm react-hook-form 
+- npm i yup (validation des formulaires)
+- npm i emailjs-com @emailjs/browser 

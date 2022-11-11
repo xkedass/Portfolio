@@ -1,7 +1,6 @@
 .projects {
 
   @include verticalCenter;
-  height: $minHeight;
   flex-direction: column;
 
   .project {
@@ -212,5 +211,6 @@
 
     }
   }
+
 
 }

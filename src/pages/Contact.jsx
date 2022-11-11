@@ -9,15 +9,15 @@ export default function Contact() {
     name: yup
       .string()
       .max(50)
-      .min(2, "coucou")
-      .required("merci de rentrer votre nom"),
-    firstName: yup.string().max(50).required("merci de rentrer votre prénom"),
+      .min(2)
+      .required("please enter your name"),
+    firstName: yup.string().max(50).required("please enter your first name"),
     email: yup
       .string()
-      .email("merci de saisir un email valide")
+      .email("please enter a valid email")
       .max(250)
-      .required("merci de saisir un email"),
-    mess: yup.string().max(50).required("merci de rentrer votre message"),
+      .required("please enter an email"),
+    mess: yup.string().max(50).required("please enter your message"),
   });
 
   const {
@@ -29,7 +29,7 @@ export default function Contact() {
   });
 
   const onSubmit = (data, r) => {
-    alert("votre message a bien été envoyé");
+    alert("your message has been sent ✅ ");
     const templateId = "template_08jt1c9";
     const serviceId = "service_y9vzzii";
     sendFeedback(serviceId, templateId, {
@@ -54,7 +54,7 @@ export default function Contact() {
                 <img src="./medias/logo black.png" className="logo" width={90} alt="" />
               </div>
               
-              <h4> Contactez moi </h4>
+              <h4> CONTACT ME </h4>
               <form
                 className="contact-form"
                 onSubmit={handleSubmit(onSubmit)}
@@ -67,7 +67,7 @@ export default function Contact() {
                       className="form-control"
                       id="inputName"
                       name="name"
-                      placeholder="Nom"
+                      placeholder="Name"
                       {...register("name")}
                     />
                     {errors.name && (
@@ -80,7 +80,7 @@ export default function Contact() {
                       className="form-control"
                       id="inputFirstName"
                       name="firstname"
-                      placeholder="Prénom"
+                      placeholder="firstname"
                       {...register("firstName")}
                     />
                     {errors.firstName && (
@@ -108,7 +108,7 @@ export default function Contact() {
                       rows="5"
                       className="form-control"
                       id="inputMessage"
-                      placeholder="Merci de laisser ici votre message"
+                      placeholder="Please leave your message here"
                       name="mess"
                       {...register("mess")}
                     />
@@ -119,7 +119,7 @@ export default function Contact() {
                 </div>
                 <div className="col-12 d-flex justify-content-center">
                   <button type="submit" className="btn btn-primary btn-sm">
-                    Valider
+                    SUBMIT
                   </button>
                 </div>
               </form>
